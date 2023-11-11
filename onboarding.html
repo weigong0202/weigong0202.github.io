@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+  <title>Your Portfolio</title>
+</head>
+<body class="onboarding-page">
+  <nav class="navbar">
+    <div class="logo" alt="My Logo">
+    </div>
+    <button class="menu-toggle"><span class="material-icons" >menu</span></button>
+    <ul class="nav-links">
+      <li><a href="index.html?section=selected-work-section">Projects</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-banner onboarding-banner">
+    <img src="images/project1.png" alt="Project 1 Image">
+  </div>
+
+  <div class="project-intro">
+    <p>The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, users can manage their Azure subscription using a graphical user interface. They can build, manage, and monitor everything from simple web apps to complex cloud deployments in the portal.</p>
+    </p>Since I joined Microsoft, I led multiple projects helping Azure users to onboard, learn, and discover the services that might interest them, so that to increase the activation/conversion/retention rate of Azure services. </p>
+  </div>
+
+
+  <div class="project-walkthrough">
+    <h2 class="project-name">Azure welcome experience</h2>
+    <p>Currently we don’t know the goal or role of users as they sign up to Azure. This makes it hard for our team to serve targeted content both in portal, as well as via email marketing to help those users graduate to next steps in adopting Azure. </p>
+    <p>Therefore, our team wants to introduce an experience to gather this information from first-time users, followed by an onboarding tour.  </p>
+    <h3>Needs & Opportunities</h3>
+    <p class="no-bottom">Together as a team, we defined the new needs for a welcome experience that:</p>
+    <ol>
+      <li>Invites users to engage with content</li>
+      <li>Feels welcoming and celebrates users’ first time Azure journey</li>
+      <li>Captures who the users are and what they are hoping to achieve with Azure to enable personalized experiences throughout the portal</li>
+    </ol> 
+    <h3>Concept Explorations</h3>
+    <p class="no-bottom">After initial concept explorations, we narrowed down to 3 concepts for qualitative study to identify pros and cons for each of the them.</p>
+    <ol>
+      <li>Survey question combined with welcome tour modal, shown as a blocking popup</li>
+      <li>Survey question combined with welcome tour, presented as full screen</li>
+      <li>Survey question combined with registration flow, shown after completing registration</li>
+    </ol> 
+  </div>
+  <div class="project-images-container">
+    <!-- Column 1 -->
+    <div class="image-column">
+        <p class="image-text">Modal</p>
+        <img src="images/modal.png" alt="modal" class="">
+    </div>
+    <!-- Column 2 -->
+    <div class="image-column">
+        <p class="image-text">Full-screen</p>
+        <img src="images/fullscreen.png" alt="fullscreen" class="">
+    </div>
+    <!-- Column 3 -->
+    <div class="image-column">
+        <p class="image-text">Registration flow</p>
+        <img src="images/registration-flow.png" alt="registration flow" class="">
+    </div>
+</div>
+<div class="project-walkthrough">
+  <h3>Design Highlights</h3>
+  <p>We conducted user study for the above 3 concepts and decided to move forward the fullscreen experience as it is the most preferred one. </p>
+  <h4>Step 1: Welcome page</h4>
+  <p>Participants liked the welcoming page as the first step as it was welcoming and readable, and the progress bar below gave them an expectation on how long this welcome experience would take. </p>
+   <div class="project-images-container3">  
+    <img class="full-length-image"src="images/welcome-page.png" alt="welcome page">
+   </div>
+   <h4>Step 2: User intent selection</h4>
+   <p>Once completing the first step, participants will be asked to select their intents at Azure. They are allowed to select multiple intents. And for each intent, they are able to read a tooltip for more clarification. </p>
+   <div class="project-images-container3">  
+    <img class="add-border"src="images/User-intent-survey.gif" alt="user intent survey">
+   </div>
+   <h4>Step3: Onboarding tour</h4>
+   <p>In the end, they’ll see a summary of Azure’s key features and be able to go through the welcome tour to have a quick understanding of how to use Azure. </p>
+   <div class="project-images-container3">  
+    <img class="add-border"src="images/onboarding-tour.gif" alt="welcome page">
+   </div>
+   <h3>Measuring Success</h3>
+   <p class="no-bottom">The project is still under implementation while I’m documenting the case. Below are our key result metrics which will help us measure the success of the project. The metrics are defined based on both the project goal and previous research. </p>
+   <ol>
+    <li>Increase welcome experience engagement rate by 20%</li>
+    <li>Collect user intent for more than 20% of users.
+    </li>
+
+   </ol>
+
+   <h3>Next Step</h3>
+   <p class="no-bottom">After launching of this project, we also have a plan for the next step: </p>
+    <ol>
+      <li>Show personalized content using collected intents</li>
+      <li>Explore different surfaces on Azure portal such Trial landing page, Azure Quickstart Center, All Services, etc. </li>
+      <li>Collaborate with partners to consume data on partner-owned surfaces.</li>
+  </ol>
+   <h2 class="project-name add-top-margin">Azure Quickstart Center</h2>
+  <p>After signing an enterprise agreement, customers take several months to multiple years to complete their Azure environment set up due to the complexity of Azure and cloud technologies and a steep learning curve. </p>
+  <p>The Azure Quickstart Center (AQC) is a in-portal experience designed for new customers to learn Azure services and accelerate their cloud deployment with confidence.​ However, according to research, the current AQC still has a lot of room to improve in terms of both usability and functionality.</p>
+  <h3>Problems and Opportunities</h3>
+  <p class="no-bottom">Together with the PM and researcher, we synthesized both the qualitative and the quantitative data collected from various channels, and defined the following key problems and design opportunities. </p>
+  <ul>
+    <li class="with-gap">Step-by-step guidance: A step-by-step checklist is the most preferred ways to learn for users who are new to Azure.</li>
+    <li class="with-gap">Need more visuals: Current content on AQC is too wordy. More visuals like videos and graphs can help accelerate learning. </li>
+    <li class="with-gap">Increase awareness: A lot of new users don’t even know the existence of AQC. We need to create a prominent AQC surface to the targeted audience. </li>
+  </ul> 
+  <h3>Design Highlights</h3>
+  <p>Through iterative designs, we tackled the final design solution for the whole user journey from
+    user awareness, learning, to service activation.</p>
+  <h4>Add surface on Azure trial landing page</h4>
+  <p>In order to enhance the visibility and accessibility of AQC within our target audience, we added
+    an AQC surface on Azure trial landing page - the landing page specifically for Azure trial users, in order to effectively introduce and promote AQC to those who might benefit from it the most. </p>
+  <div class="project-images-container3">
+      <img src="images/trial-landing-page.png" alt="trial landing page">
+    </div>
+  <h4>Step-by-step checklist to help users onboard</h4>
+  <p>In order for new users to onboard quickly and grasp the concepts more effectively, we created a clear and organized sequence of tutorials for users to learn. Users will have a clear path to navigating the content designed to help them get started.</p>
+  <div class="project-images-container3">
+    <img src="images/checklist.png" alt="checklist">
+  </div>
+  <h4>Curated video tutorials and visuals</h4>
+  <p>Provided curated video tutorials supplemented with visual graphs and documentations to help users better engage with the content and accelerate the deployment. </p>
+  <div class="add-border">
+    <img src="images/tutorial.gif" alt="tutorials">
+  </div>
+  <h3>Impact</h3>
+  <p>Both activation and conversion rate increased significantly.  Conversation rate for free trial to PAYG increased by 8.6% consistently over three-month measurement window.</p>
+
+  <h2 class="project-name add-top-margin">Azure Service Recommendation</h2>
+  <p>Azure has more 200 services and the number is still growing. In order to drive revenue, we want to give users the right service exposure and recommendations so that to increase the activation rate. </p>
+  <h3>Problems and Opportunities</h3>
+  <p class="no-bottom">Currently, there are two existing cross sell initiatives - emails and notifications.  However, there are several problems for the current initiatives: </p>
+  <ul class="add-bottom-margin">
+    <li>They are often disabled or ignored by users;</li>
+    <li>They are limited in screen real estate and number of impressions;</li>
+    <li>They are limited in screen real estate and number of impressions;</li>
+  </ul>
+  <p class="no-bottom">Therefore, we need a new cross-sell surface that:</p>
+  <ul>
+    <li>Is always available and accessible when users want service recommendations</li>
+    <li>Educates users why a service is recommended and how it can be integrated into the existing workflow</li>
+    <li>Invites users to learn more but does not distract them from workflows</li>
+  </ul>
+  <h3>Design Highlights</h3>
+  <p>After discussion, our team including me, one PM and one researcher, decided to create a page called “Recommended” under our current “All services” blade, providing a surface specifically for users who want service recommendations. </p>
+  <div class="project-images-container4">
+    <p class="image-text">Descriptive View</p>
+    <img src="images/Descriptive view.png" alt="Descriptive View">
+    <p class="image-text">No Result</p>
+    <img src="images/No result.png" alt="No result">
+  </div>
+
+</div>
+<section class="bottom-navigation">
+  <ul>
+    <li><a href="index.html">All</a></li>
+    <li class="active"><a href="onboarding.html">Azure onboarding experience</a></li>
+    <li><a href="intelligent.html">Azure intelligent experience</a></li>
+  <li><a href="core-experience.html">Azure portal hubs</a></li>
+  </ul>
+</section>
+
+
+
+</body>
+</html> 
+
+

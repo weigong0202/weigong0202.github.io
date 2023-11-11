@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+  <title>Your Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo" alt="My Logo">
+    </div>
+    <button class="menu-toggle"><span class="material-icons" >menu</span></button>
+    <ul class="nav-links">
+      <li><a href="#selected-work-section" class="smooth-scroll">Projects</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-section">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="images/image.png" alt="Your Image" class="main-image">
+        <img src="images/music-note.png" alt="Music Note" class="music-note left-note">
+        <img src="images/music-note.png" alt="Music Note" class="music-note right-note">
+      </div>
+      <div class="about-text">
+        <p class="intro-greeting">Hi, I’m Wei Gong</p>
+        <p class="intro-description">I’m a product designer based in the bay area. Currently, I’m shaping the cloud experience at Microsoft Azure, helping IT pros work productively and efficiently. </p>
+        <button class="contact-button">Contact me</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="selected-work-section">
+    <h2 class="selected-work-title">Selected Work</h2>
+    <div class="project-blocks">
+      <a href="onboarding.html" class="project-link">
+      <div class="project-block project-block-1">
+        <div class="project-content">
+          <div class="project-text">
+            <h3 class="project-title">Azure onboarding experience</h3>
+            <p class="project-description">Helping Azure users to onboard, learn, and discover the services that might interest them, so that to increase the activation or conversion rate of Azure services. </p>
+          </div>
+          <div class="project-image">
+            <img src="images/project1.png" alt="Project 1 Image">
+          </div>
+        </div>
+      </div>
+      </a>
+      <a href="intelligent.html" class="project-link">
+      <div class="project-block project-block-2">
+        <div class="project-content">
+          <div class="project-text">
+            <h3 class="project-title">Azure intelligent experience</h3>
+            <p class="project-description">Integrating Microsoft’s AI capabilities into Azure so that to create an intelligent experience at Azure. </p>
+          </div>
+          <div class="project-image">
+            <img src="images/project2.png" alt="Project 2 Image">
+          </div>
+        </div>
+      </div>
+      </a>
+      <a href="core-experience.html" class="project-link">
+      <div class="project-block project-block-3">
+        <div class="project-content">
+          <div class="project-text">
+            <h3 class="project-title">Azure portal hubs</h3>
+            <p class="project-description">Working on several core hubs on Azure portal including dashboard, search, etc. </p>
+          </div>
+          <div class="project-image">
+            <img src="images/project3.png" alt="Project 3 Image">
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-line1">Hand-coded by Wei @ Bay Area, 2023</div>
+  </footer>
+
+</body>
+</html>  

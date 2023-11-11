@@ -1,0 +1,1066 @@
+
+/* Define custom properties for overlay colors */
+:root {
+  --overlay-color-1: #FBC2EB;
+  --overlay-color-2: #A6C1EE;
+  --overlay-color-2-1: #A1D4FE; /* Slightly modified colors for a noticeable effect */
+  --overlay-color-2-2: #C2F0FC;
+  --overlay-color-3-1: #FFEDD3;
+  --overlay-color-3-2: #FCC2A0;
+  --anim-duration: 2s; /* Set the animation duration */
+}
+
+
+
+/* Reset and basic styling styles remain the same */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: #FFFBF7;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px 30px 80px;
+    transition: background-color 1s ease-in-out;  /* add this line */
+  }
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left:auto
+  }
+  
+  
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+    padding-bottom: 2px; /* Add padding below text */
+    position: relative; /* Required for padding to work */
+    border-bottom: 2px solid transparent; /* Initial transparent border */
+    transition: border-bottom 0.3s ease-in-out; /* Transition effect */
+  }
+
+
+/* Hover effect */
+.nav-links a:hover {
+  border-bottom: 2px solid #000; /* Add a border-bottom on hover */
+}
+
+
+  
+
+/* Initially hide the menu button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media query to show the menu button on small screens */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links initially */
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background-color: #FFFBF7;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links .last-item {
+    margin-right: 0;
+  }
+}
+
+/* Logo styles */
+.logo {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+  background-color: #B9A1FD;
+  transform-origin: center; /* Set the rotation origin */
+  animation: rotateColor 4s ease-in-out infinite; /* Apply the animation */
+}
+
+
+
+@keyframes rotateColor {
+  0% {
+    transform: rotate(0deg);
+    background-color: #B9A1FD;
+  }
+  12.5% {
+    transform: rotate(90deg);
+    background-color: #A1C4FD;
+  }
+  25% {
+    transform: rotate(90deg);
+    background-color: #A1C4FD;
+  }
+  37.5% {
+    transform: rotate(180deg);
+    background-color: #FCB69F;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: #FCB69F;
+  }
+  62.5% {
+    transform: rotate(270deg);
+    background-color: #A1C4FD;
+  }
+  75% {
+    transform: rotate(270deg);
+    background-color: #A1C4FD;
+  }
+  87.5% {
+    transform: rotate(360deg);
+    background-color: #B9A1FD;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #B9A1FD;
+  }
+}
+
+
+
+/* Rest of your existing styles */
+
+/* About section styles */
+.about-section {
+  background-color: #FFFBF7;
+  padding: 120px 60px 160px 60px;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-image img {
+  max-width: 300px; /* Adjust size as needed */
+  border-radius: 50%; /* To create a circular image */
+
+}
+
+.music-note {
+  position: absolute;
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 1; /* Make sure it's below the main image */
+  animation: floatAnimation 3s ease-in-out infinite; /* Play the animation infinitely */
+
+}
+
+.left-note {
+  width: 110px;
+  left: -110px; /* Adjust this to get the desired gap */
+  top: 100%;
+  animation-delay: 0s;  /* No delay for the first note */
+
+}
+
+.right-note {
+  width: 60px;
+  right: -35px; /* Adjust this to get the desired gap */
+  top: 1%;
+  animation-delay: 0s;  /* No delay for the first note */
+
+}
+
+.about-text {
+  max-width: 600px;
+  margin-left: 30px; /* Add margin to the left of the text */
+
+}
+
+@keyframes floatAnimation {
+  0% { transform: translateY(-50%); }
+  50% { transform: translateY(-70%); }
+  100% { transform: translateY(-50%); }
+}
+
+
+.intro-greeting {
+  margin-bottom: 20px; /* Add margin between paragraphs */
+  color: #333;
+  font-family: Kaisei Tokumin;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.intro-description {
+  line-height: 1.5; /* Adjust line height for readability */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  color: #333;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.contact-button {
+  color: #000000;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 100px;
+  background: #B9A1FD;
+  cursor: pointer;
+  color: #000;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #927EE7 ; /* Darken the background color on hover */
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .about-image {
+    min-height: 0; /* Reset minimum height for smaller screens */
+  }
+
+  .about-image img {
+    margin-bottom: 20px; /* Add margin to the bottom of the image */
+  }
+
+  .about-text {
+    margin-top: 0; /* Reset top margin for text */
+  }
+}
+
+
+/* Rest of your existing styles */
+
+.selected-work-section {
+  background-color: white;
+  padding: 120px 200px 100px 200px;
+}
+
+.selected-work-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #000;
+  font-family: Kaisei Tokumin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.project-blocks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-block {
+    margin-bottom: 120px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start */
+    overflow: hidden; /* Hide overflowing gradient animation */
+    position: relative; /* Required for absolute positioned gradient */
+    cursor:pointer;
+    z-index: 1;
+    transition: background 0.4s ease-in-out; /* Transition effect for background color */
+
+}
+
+
+
+.project-block-1 {
+  border-radius: 30px;
+  background: linear-gradient(45deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+  display: flex;
+  padding: 116px 80px;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+.project-block-1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(225deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+  opacity: 0; /* Ensures the gradient isn't visible by default */
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.project-block-1:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transform: scale(1.01); /* Slight enlargement */
+  z-index: 10; /* To ensure it stays on top of other content while enlarged */
+  background: linear-gradient(45deg, var(--overlay-color-2-1) 0%, var(--overlay-color-2-2) 100%); /* New gradient on hover */
+
+}
+
+
+
+.project-block-1:hover:after {
+  animation: OpacityAnim var(--anim-duration) ease-in-out infinite alternate;
+  opacity: 1; /* Makes sure the gradient is visible on hover before animation kicks in */
+  transform: scale(1.01); /* Ensuring the gradient expands with the block */
+
+}
+
+@keyframes OpacityAnim {
+  0%, 100% { opacity: 0.4; } /* Adjusted starting and ending opacity */
+  50% { opacity: 1; } /* Adjusted middle opacity for a bolder effect */
+}
+
+
+
+.project-block-2 {
+  border-radius: 30px;
+  background: linear-gradient(45deg, var(--overlay-color-2-1) 0%, var(--overlay-color-2-2) 100%);
+  display: flex;
+  padding: 116px 80px;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-block-2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(225deg, var(--overlay-color-2-1) 0%, var(--overlay-color-2-2) 100%);
+  opacity: 0; 
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-block-2:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transform: scale(1.01); /* Slight enlargement */
+  z-index: 10; /* To ensure it stays on top of other content while enlarged */
+  /* ... your hover effects ... */
+  background: linear-gradient(45deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%); /* New gradient on hover */
+
+}
+
+.project-block-2:hover:after {
+  animation: OpacityAnim2 var(--anim-duration) ease-in-out infinite alternate;
+  opacity: 1; 
+  transform: scale(1.01); 
+}
+@keyframes OpacityAnim2 {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.project-block-3 {
+  display: flex;
+  padding: 116px 80px;
+  align-items: center;
+  gap: 100px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, var(--overlay-color-3-1) 0%, var(--overlay-color-3-2) 100%);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-block-3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(225deg, var(--overlay-color-3-1) 0%, var(--overlay-color-3-2) 100%);
+  opacity: 0; 
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.project-block-3:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transform: scale(1.01); /* Slight enlargement */
+  z-index: 10; /* To ensure it stays on top of other content while enlarged */
+  background: linear-gradient(45deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%); /* New gradient on hover */
+
+}
+
+.project-block-3:hover:after {
+  animation: OpacityAnim3 var(--anim-duration) ease-in-out infinite alternate;
+  opacity: 1; 
+  transform: scale(1.01); 
+}
+
+@keyframes OpacityAnim3 {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+
+
+
+
+.project-block {
+  margin-bottom: 120px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align items to the start */
+  position: relative; /* Required for pseudo-element */
+  overflow: hidden; /* Hide overflowing gradient animation */
+}
+
+
+
+/* Rest of your existing styles */
+
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.project-text {
+  max-width: 40%; /* Adjust width as needed */
+  text-align: left;
+}
+
+.project-title {
+  color: #333;
+  font-family: Avenir;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  color: #333;
+  font-family: Avenir LT Std;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1.5;
+}
+
+.project-image {
+  max-width: 50%;
+  margin-left: 100px
+
+}
+
+.project-image img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .selected-work-section {
+    padding: 60px 60px; /* Reduce padding on smaller screens */
+  }
+
+  .project-block {
+    align-items: center; /* Center-align items vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .project-text {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* Add this to your existing CSS or create a new CSS file */
+.footer {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.footer-line1 {
+  font-size: 18px;
+  color: #000;
+font-family: Avenir;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.about-page .navbar {
+  background-color: #EAF2FF;
+}
+
+
+.about-page .about-section {
+  background-color: #EAF2FF;
+}
+
+
+.introduction-list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.introduction-list li {
+  margin-bottom: 16px;
+}
+
+
+.about-page .about-text {
+  max-width: 750px;
+  margin-left: 30px;
+}
+
+
+.about-page .about-me-link{
+  border-bottom: 2px solid; /* Initial transparent border */
+}
+
+
+.resume {
+  color: #000000;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 100px;
+  background: #B9A1FD;
+  cursor: pointer;
+  color: #000;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.resume:hover {
+  background-color: #927EE7 ; /* Darken the background color on hover */
+}
+
+.about-page .fun-facts-section {
+  background-color: white;
+  padding: 120px 200px 100px 200px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+  .about-page .fun-facts-section {
+    padding: 60px 60px; /* Reduce padding on smaller screens */
+  }
+}
+
+.facts-container {
+  display: flex;
+  justify-content: space-between; /* evenly space the columns */
+}
+
+.fact-column {
+  flex: 1; /* distribute space evenly between columns */
+  text-align: center; /* center the content */
+  margin: 80px; /* spacing between columns */
+}
+
+
+
+
+@media screen and (max-width: 1366px){
+  .fact-column {
+    flex: 1; /* distribute space evenly between columns */
+    text-align: center; /* center the content */
+    margin: 40px; /* spacing between columns */  }
+}
+
+@media screen and (max-width: 768px){
+  .fact-column {
+    flex: 1; /* distribute space evenly between columns */
+    text-align: center; /* center the content */
+    margin: 20px; /* spacing between columns */  }
+}
+
+
+.fact-image {
+  border-radius: 50%; /* make the image rounded */
+  max-width: 100%; /* make sure the image doesn't overflow its container */
+  margin-bottom: 20px; /* spacing between image and text */
+}
+
+.fact-text {
+  color: #333;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  /* Add any styling you'd like for the text here */
+}
+
+
+.project-link {
+  display: block; /* Make the anchor tag behave like a block-level element */
+  text-decoration: none; /* Remove underlines */
+  color: inherit; /* Use the parent color, so text isn't the default blue of links */
+}
+
+
+.onboarding-page .navbar {
+  background-color: white;
+}
+
+
+
+.project-banner {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  width: 50vw;
+  height: auto;
+  padding: 100px 120px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+
+}
+
+.onboarding-banner {
+  background: linear-gradient(90deg, #FBC2EB 0%, #A6C1EE 100%);
+}
+
+.core-experience-banner{
+  background: linear-gradient(90deg, #FFECD2 0%, #FCB69F 100%);
+}
+
+.intelligent-banner{
+  background: linear-gradient(90deg, #A1C4FD 0%, #C2E9FB 100%);
+}
+
+.project-banner img {
+  max-width: 60%;
+  height: auto;
+}
+
+.project-intro {
+  color: #333;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1.6;
+  width: 60vw;
+  max-width: 680px;
+  margin-top: 80px;
+  margin-bottom:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.project-intro p {
+  margin-bottom: 20px;
+}
+
+
+.project-name {
+  font-size: 32px;
+  color: #000;
+  font-family: Kaisei Tokumin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom:40px;
+}
+
+
+.project-walkthrough {
+    color: #333;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 1.6;
+    width: 60vw;
+    max-width:700px;
+    margin-top: 120px;
+    margin-bottom:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-walkthrough p {
+  margin-bottom: 20px;
+}
+.project-walkthrough .no-bottom{
+  margin-bottom: 0px;
+}
+
+.project-walkthrough h3 {
+  text-align: center;
+  color: #333;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 80px;
+  margin-bottom:20px;
+}
+
+.project-walkthrough ol{
+  padding-left: 20px;
+}
+.project-walkthrough ul{
+  padding-left: 20px;
+}
+.project-walkthrough ul .with-gap{
+  padding-left: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.project-images-container{
+  margin: 0 auto;
+  margin-top: -70px;
+  width: 80vw;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background:#F3F5F8;
+  flex-wrap: wrap; /* Add this */
+  padding: 30px 60px;  /* Adjust these values as you see fit */
+
+}
+
+.image-column {
+  text-align: center; /* Align text to the center */
+  margin: 30px;  /* Adjust if you want more or less spacing between columns */
+}
+.image-column-core-experience {
+  text-align: center; /* Align text to the center */
+  margin: 60px;  /* Adjust if you want more or less spacing between columns */
+  
+}
+
+.image-column-core-experience img {
+  width:100%;
+  max-width: 560px;
+  height: auto;
+}
+
+.project-images-container2 img {
+  width:100%;
+  max-width: 560px;
+  height: auto;
+}
+
+.image-column .image-text{
+  color: #0078D4;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px
+  
+}
+
+.image-column img {
+  width: 400px;
+}
+
+.project-images-container2{
+  margin: 0 auto;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background:#F3F5F8;
+  flex-wrap: wrap; /* Add this */
+  padding: 60px 30px;
+  margin-bottom: 200px;
+}
+
+
+
+.add-border img {
+  width: 100%;
+  display: block;             /* Makes the image a block element, which can help in eliminating any unwanted whitespace */
+  margin: 0 auto;             /* Center the image horizontally */
+  margin-bottom: 0;
+  border: 1.5px solid #f2f2f2;
+}
+
+.image-column2 {
+  text-align: left; /* Align text to the center */
+  margin: 40px;  /* Adjust if you want more or less spacing between columns */
+}
+
+.image-column2 img {
+  width: 100%;
+}
+
+.image-column2 .image-text{
+  color: #0078D4;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px
+}
+
+.project-walkthrough h4{
+  color: #333;
+font-family: Avenir;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom:10px;
+margin-top: 48px;
+}
+
+.project-images-container3 {
+  margin: 0 auto;
+  height: auto;
+  background: transparent;
+  padding: 0px;
+  margin-bottom: 80px;
+  display: flex;              /* Added this */
+  flex-direction: column;     /* Added this */
+  align-items: center;        /* Added this to center-align contents horizontally */
+  justify-content: flex-start;/* Added this to start-align contents vertically */
+}
+
+.project-images-container3 .image-text{
+  color: #0078D4;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+
+.project-images-container3 img {
+  width: 100%;
+  display: block;             /* Makes the image a block element, which can help in eliminating any unwanted whitespace */
+  margin: 0 auto;             /* Center the image horizontally */
+  margin-bottom: 0;
+}
+
+
+.project-images-container3 .add-border {
+ border: 1.5px solid #f2f2f2;
+}
+
+
+
+
+.project-walkthrough .add-bottom-margin{
+  margin-bottom: 20px;
+}
+
+
+
+.project-images-container4 {
+  margin: 0 auto;
+  height: auto;
+  border-radius: 10px;
+  background:#F3F5F8;
+  padding: 20px;
+  margin-bottom: 80px;
+  display: flex;              /* Added this */
+  flex-direction: column;     /* Added this */
+  align-items: center;        /* Added this to center-align contents horizontally */
+  justify-content: flex-start;/* Added this to start-align contents vertically */
+}
+
+.project-images-container4 img {
+  width: 90%;
+  display: block;             /* Makes the image a block element, which can help in eliminating any unwanted whitespace */
+  margin: 0 auto;             /* Center the image horizontally */
+  margin-bottom: 40px;
+}
+
+.project-images-container4 .image-text{
+  color: #0078D4;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+
+
+.project-images-container5 {
+  margin: 0 auto;
+  height: auto;
+  border-radius: 10px;
+  background:#F3F5F8;
+  padding: 60px 20px;
+  margin-bottom: 80px;
+  display: flex;              /* Added this */
+  flex-direction: column;     /* Added this */
+  align-items: center;        /* Added this to center-align contents horizontally */
+  justify-content: flex-start;/* Added this to start-align contents vertically */
+}
+
+.project-images-container5 img {
+  width: 90%;
+  display: block;             /* Makes the image a block element, which can help in eliminating any unwanted whitespace */
+  margin: 0 auto;             /* Center the image horizontally */
+}
+
+
+.add-top-margin{
+  margin-top: 200px;
+}
+
+.bottom-navigation {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.bottom-navigation ul{
+  list-style-type: none;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+.bottom-navigation li {
+  float: left;
+  margin-right: 20px;
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+
+}
+
+
+.bottom-navigation a {
+  display: block;
+  color: #BCBCBC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bottom-navigation a:hover {
+  color: black;
+  font-weight: 800;
+}
+
+.bottom-navigation .active a{
+  color: black;
+  font-weight: 800;
+}
+
+.add-top-margin2{
+  margin-top: 20px;
+}

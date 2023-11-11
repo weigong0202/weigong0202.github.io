@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+  <title>Your Portfolio</title>
+</head>
+<body class="onboarding-page">
+  <nav class="navbar">
+    <div class="logo" alt="My Logo">
+    </div>
+    <button class="menu-toggle"><span class="material-icons" >menu</span></button>
+    <ul class="nav-links">
+      <li><a href="index.html?section=selected-work-section">Projects</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-banner core-experience-banner">
+    <img src="images/project3.png" alt="Project 1 Image">
+  </div>
+
+  <div class="project-intro">
+    <p>Since I joined Azure, I started to work on several core hubs on Azure portal, like Dashboard, Global Search, All services, etc. </p>
+  </div>
+
+  <div class="project-walkthrough">
+    <h2 class="project-name">Dashboard Hub</h2>
+    <p class="no-bottom">Currently across Azure, there a two types of dashboards:</p>
+    <ol>
+      <li>Show personalized content using collected intents</li>
+      <li>Explore different surfaces on Azure portal such Trial landing page, Azure Quickstart Center, All Services, etc. </li>
+      <li>Collaborate with partners to consume data on partner-owned surfaces.</li>
+  </ol>
+    <h3>Problems and Opportunities</h3>
+    <p class="no-bottom">Through many research studies, we found the problems with the current dashboard experience as follow: </p> 
+    <ol>
+      <li>Users have trouble finding dashboards since private and shared dashboards have different locations and they often get confused. </li>
+      <li>The experience is not end-to-end with only Shared Dashboard having a browse. </li>
+  </ol> 
+    <P class="add-top-margin2">Therefore, we decided to create a “Dashboard Hub” where users can have on place to access a list of the shared dashboards, private dashboards, recents, and any helpful information such as documentation, how-to videos, etc. </P>
+ 
+    <h3>Design Highlights</h3>
+    <p>Through iterative designs, we tackled the final design solution for the the dashboard hub where
+      users can learn about dashboard, create dashboard, view and manage their dashboards. </p>
+    <h4>Different views for first-time vs. return users</h4>
+    <p>For first-time users who haven’t created or been shared any dashboards before, they will be prompted to “Get started” and create their first dashboard. For users who have either created or been shared dashboards before, they’ll be able to have a quick overview of their 10 most recent dashboards. </p>
+    <div class="project-images-container4">
+      <p class="image-text">First-time user</p>
+      <img src="images/get-started-dashboard.png" alt="First time user">
+      <p class="image-text">Return user</p>
+      <img src="images/recent-dashboard.png" alt="Return user">
+    </div>
+    <h4>Access to more knowledge about dashboard</h4>
+    <p>Users can easily access the documentation and video tutorials for dashboard in the dashboard hub. </p>
+    <div class="project-images-container5">
+      <img src="images/learnmore-dashboard.gif" alt="learn more">
+    </div>
+    <h4>Browse experience for both private and shared dashboards</h4>
+    <p>Provide consistent browse experience for private and shared dashboards where they can manage and operate on the dashboards. </p>
+    <div class="project-images-container4">
+      <p class="image-text">Private dashboard</p>
+      <img src="images/private-dashboard.png" alt="Private dashboard">
+      <p class="image-text">Shared dashboard</p>
+      <img src="images/shared-dashboard.png" alt="Shared dashboard">
+    </div>   
+
+
+  </div>
+
+
+<div class="project-walkthrough add-top-margin">
+  <h2 class="project-name">Global Search Hub</h2>
+  <p>Azure has a lot of offerings and services and sometimes it could be very tricky trying to navigate around the portal. Azure global search is the central locations for users to find any service, instance, documents or anything that can be found in Azure. </p>
+  <p>Since I joined Azure, I have worked on several projects to improve the Azure global search experience to help users navigate in Azure and find what they need more efficiently. </p>
+  <h4>Create on hover</h4>
+  <p>According to research, some of Azure users feel the journey from search to the resource create point too long and would benefit from a shorter path. Therefore, we initiated the project allowing users to create a research directly in Global Search, with the goal to accelerate resource creation and increase the number of creates. </p>
+  <div class="project-images-container3 add-border">
+    <img src="images/create-onhover.gif">
+  </div>
+  
+</div>
+
+</div>
+
+<section class="bottom-navigation">
+  <ul>
+    <li><a href="index.html">All</a></li>
+    <li><a href="onboarding.html">Azure onboarding experience</a></li>
+    <li><a href="intelligent.html">Azure intelligent experience</a></li>
+  <li class="active"><a href="core-experience.html">Azure portal hubs</a></li>
+  </ul>
+</section>
+
+
+</body>
+</html> 
+
+
