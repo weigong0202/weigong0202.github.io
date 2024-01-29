@@ -45,7 +45,7 @@
   .nav-links a {
     text-decoration: none;
     color: #333333;
-    font-family: Avenir;
+    font-family: Avenir, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -231,7 +231,7 @@
 .intro-greeting {
   margin-bottom: 20px; /* Add margin between paragraphs */
   color: #333;
-  font-family: Kaisei Tokumin;
+  font-family: Kaisei Tokumin, serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -242,7 +242,7 @@
   line-height: 1.5; /* Adjust line height for readability */
   margin-bottom: 20px; /* Add margin at the bottom */
   color: #333;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -257,7 +257,7 @@
   background: #B9A1FD;
   cursor: pointer;
   color: #000;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -302,7 +302,7 @@
   font-size: 30px;
   margin-bottom: 30px;
   color: #000;
-  font-family: Kaisei Tokumin;
+  font-family: Kaisei Tokumin, serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -504,7 +504,7 @@
 
 .project-title {
   color: #333;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 900;
@@ -514,7 +514,7 @@
 
 .project-description {
   color: #333;
-  font-family: Avenir LT Std;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 350;
@@ -561,7 +561,7 @@
 .footer-line1 {
   font-size: 18px;
   color: #000;
-font-family: Avenir;
+font-family: Avenir, sans-serif;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -581,7 +581,7 @@ line-height: normal;
   margin-left: 20px;
   margin-bottom: 20px;
   color: #333;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -612,7 +612,7 @@ line-height: normal;
   background: #B9A1FD;
   cursor: pointer;
   color: #000;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -676,7 +676,7 @@ line-height: normal;
 .fact-text {
   color: #333;
   text-align: center;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 350;
@@ -731,7 +731,7 @@ line-height: normal;
 
 .project-intro {
   color: #333;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 350;
@@ -753,7 +753,7 @@ line-height: normal;
 .project-name {
   font-size: 32px;
   color: #000;
-  font-family: Kaisei Tokumin;
+  font-family: Kaisei Tokumin, serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -764,7 +764,7 @@ line-height: normal;
 
 .project-walkthrough {
     color: #333;
-    font-family: Avenir;
+    font-family: Avenir, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 350;
@@ -787,7 +787,7 @@ line-height: normal;
 .project-walkthrough h3 {
   text-align: center;
   color: #333;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -848,7 +848,7 @@ line-height: normal;
 
 .image-column .image-text{
   color: #0078D4;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -896,7 +896,7 @@ line-height: normal;
 
 .image-column2 .image-text{
   color: #0078D4;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -906,7 +906,7 @@ line-height: normal;
 
 .project-walkthrough h4{
   color: #333;
-font-family: Avenir;
+font-family: Avenir,sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -929,7 +929,7 @@ margin-top: 48px;
 
 .project-images-container3 .image-text{
   color: #0078D4;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -981,7 +981,7 @@ margin-top: 48px;
 
 .project-images-container4 .image-text{
   color: #0078D4;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -1032,7 +1032,7 @@ margin-top: 48px;
 .bottom-navigation li {
   float: left;
   margin-right: 20px;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 350;
