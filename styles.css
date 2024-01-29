@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('path-to-your-font/Avenir.woff') format('woff');
+  /* Add additional font formats (e.g., woff2, ttf) for cross-browser compatibility */
+}
+
+
+
+
+
+
 
 /* Define custom properties for overlay colors */
 :root {
@@ -46,7 +57,7 @@
     text-decoration: none;
     color: #333333;
     font-family: Avenir, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
