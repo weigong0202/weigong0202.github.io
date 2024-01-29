@@ -46,7 +46,7 @@
     text-decoration: none;
     color: #333333;
     font-family: Avenir, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -559,7 +559,7 @@
 }
 
 .footer-line1 {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
 font-family: Avenir, sans-serif;
 font-style: normal;
@@ -732,7 +732,7 @@ line-height: normal;
 .project-intro {
   color: #333;
   font-family: Avenir, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 350;
   line-height: 1.6;
@@ -765,7 +765,7 @@ line-height: normal;
 .project-walkthrough {
     color: #333;
     font-family: Avenir, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 350;
     line-height: 1.6;
@@ -907,7 +907,7 @@ line-height: normal;
 .project-walkthrough h4{
   color: #333;
 font-family: Avenir,sans-serif;
-font-size: 18px;
+font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
