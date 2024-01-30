@@ -518,7 +518,7 @@
   font-family: Avenir, sans-serif;
   font-size: 26px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -526,7 +526,7 @@
 .project-description {
   color: #333;
   font-family: Avenir, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 350;
   line-height: 1.5;
