@@ -69,3 +69,14 @@ $(document).ready(function() {
       $("html, body").animate({ scrollTop: 0 }, "slow");
   });
 });
+
+function openPDF() {
+  // Replace 'path/to/your/resume.pdf' with the actual path to your PDF file
+  var pdfPath = '/weigong-2024.pdf';
+  
+  // Open the PDF file in a new tab
+  window.open(pdfPath, '_blank');
+}
+
+
+///Users/gongwei/Documents/GitHub/weigong0202.github.io/weigong-2024.pdf
